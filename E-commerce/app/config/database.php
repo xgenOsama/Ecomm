@@ -51,13 +51,12 @@ return array(
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
-
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'Ecomm',
-			'username'  => 'root',
-			'password'  => 'g33k',
+			'host'      => 'ecommerce.mysql.eu1.frbit.com',
+			'database'  => 'ecommerce',
+			'username'  => 'ecommerce',
+			'password'  => 'l.VLOtqvC8MvnHnPDuBhTRpf',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
