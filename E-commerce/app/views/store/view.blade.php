@@ -9,8 +9,8 @@
 	    <p>{{$product->description}}</p>
 
 	    <hr />
-
-	   {{Form::open(array('url'=>'store/addtocart'))}}
+ 
+	   {{Form::open('url' => 'store/addtocart')}}
 	        {{Form::label('quantity','Qty')}}
 	        {{Form::text('quantity',1,array('maxlength'=>2))}}
 	        {{Form::hidden('id',$product->id)}}
@@ -18,7 +18,7 @@
 				{{HTML::image("img/white-cart.gif", "Add to Cart")}}
 	             ADD TO CART
 	        </button>
-	        {{Form::close()}}
+	        {{Form::close()}} 
 	</div><!-- end product-details -->
 	<div id="product-info">
     <p class="price">{{$product->price}}</p>

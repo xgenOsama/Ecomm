@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"intervention/image":"dev-master",
-		"moltin/laravel-cart": "dev-master"
+		"moltin/laravel-cart": "dev-master",
+		"rap2hpoutre/laravel-log-viewer": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

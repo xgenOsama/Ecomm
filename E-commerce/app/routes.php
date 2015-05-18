@@ -10,7 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 Route::get('/',array('uses'=>'StoreController@getIndex'));
 Route::controller('admin/categories', 'CategoriesController');
 Route::controller('admin/products','ProductsController');
