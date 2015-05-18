@@ -35,7 +35,7 @@
 		{{Availability::display($product->availability)}}
 		</span></h5>
 		<p>
-			{{Form::open('url'=>'store/addtocart')}}
+			{{Form::open(array('url'=>'store/addtocart'))}}
 			{{Form::hidden('quantity',1)}}
 			{{Form::hidden('id',$product->id)}}
 			<button type="submit" class="cart-btn">

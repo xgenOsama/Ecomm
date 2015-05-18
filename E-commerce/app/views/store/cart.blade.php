@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section
+@section('content')
 <div id="shopping-cart">
 	<h1>Shopping Cart & Checkout</h1>
 

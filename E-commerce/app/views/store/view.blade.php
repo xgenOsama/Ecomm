@@ -10,7 +10,7 @@
 
 	    <hr />
  
-	   {{Form::open('url' => 'store/addtocart')}}
+	   {{Form::open(array('url' => 'store/cart'))}}
 	        {{Form::label('quantity','Qty')}}
 	        {{Form::text('quantity',1,array('maxlength'=>2))}}
 	        {{Form::hidden('id',$product->id)}}
