@@ -36,8 +36,15 @@
 	            <td colspan="5">
 	                Subtotal: ${{Cart::total()}}<br />
 	                <span>TOTAL: ${{Cart::total()}}</span><br />
-
+	                <input type="hidden" name="cmd" value="_xclick" />
+	                <input type="hidden" name="business" value="office@shop.com" />
+	                <input type="hidden" name="item_name" value="eCommerce Store Purchase" />
+	                <input type="hidden" name="amount" value="{{Cart::total()}}"/>
+	                <input type="hidden" name="first_name" value="{{Auth::user()->firstname}}" />
+	                <input type="hidden" name="last_name" value="{{Auth::user()->lastname}}" />
+	                <input type="hidden" name="email" value="{{Auth::user()->email}}" />
 	                <a href="#" class="tertiary-btn">CONTINUE SHOPPING</a>
+	                {{HTML::link('/', 'Continue Shopping', array('class' => 'tertiary-btn'))}}
 	                <input type="submit" value="CHECKOUT WITH PAYPAL" class="secondary-cart-btn">
 	            </td>
 	        </tr>
