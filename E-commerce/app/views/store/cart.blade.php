@@ -17,7 +17,7 @@
 	        <tr>
 	            <td>{{$product->id}}</td>
 	            <td>
-	                {{HTML::image("img/main-product.png", "Product", array('width'=>'65','height'=>'37'))}}
+	                {{HTML::image("$product->image", "Product", array('width'=>'65','height'=>'37'))}}
 	                {{$product->name}}
 	            </td>
 	            <td>{{$product->price}}</td>
@@ -43,7 +43,6 @@
 	                <input type="hidden" name="first_name" value="{{Auth::user()->firstname}}" />
 	                <input type="hidden" name="last_name" value="{{Auth::user()->lastname}}" />
 	                <input type="hidden" name="email" value="{{Auth::user()->email}}" />
-	                <a href="#" class="tertiary-btn">CONTINUE SHOPPING</a>
 	                {{HTML::link('/', 'Continue Shopping', array('class' => 'tertiary-btn'))}}
 	                <input type="submit" value="CHECKOUT WITH PAYPAL" class="secondary-cart-btn">
 	            </td>
