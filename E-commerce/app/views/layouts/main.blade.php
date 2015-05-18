@@ -61,6 +61,10 @@
                                         {{HTML::image("img/down-arrow.gif",Auth::user()->firstname)}}</a>
                                         <ul>
                                             <li><a href="#">Order History</a></li>
+                                            @if(Auth::user()->admin == 1)
+                                            <li>{{HTML::link('admin/categories', 'Manage categories')}}</li>
+                                            <li>{{HTML::link('admin/products', 'Manage products')}}</li>
+                                            @endif
                                             <li>{{HTML::link('users/signout','Sign out')}}</li>
                                         </ul>
                                     </li>
